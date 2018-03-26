@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding : 0 
+}
+
+* {
+  background-color: #03A9F4;
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif, Times, serif; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#weather {
+  height: 100%;
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  color: #0288D1;
+  background: #fff;
+  padding: 1em;
+  margin: 0.6em;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fivedays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  padding: 2% 10%;
+}
+
+.fivedays, .fivedays div, .fivedays p , .fivedays h3 {
+  color: #757575;
+  background: #fff;
+}
+
+.fivedays h3 {
+  width: 100%;
+  margin-bottom: 1em;
+  padding-top: 0.4em;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6em;
+}
+
+.forecast .day {
+  text-transform: uppercase;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+}
+
+.lowhigh {
+  display: flex;
+  flex-direction: row;
+}
+
+.high, .low {
+  margin: 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.high p{
+  color: #536DFE !important;
+}
+
+.fivedays .low p {
+  color: #FF5252;
+}
+
+.errorInAPI {
+  text-align: center;
+  vertical-align: middle;
+}
