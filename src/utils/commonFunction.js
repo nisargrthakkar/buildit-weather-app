@@ -17,10 +17,10 @@ export const getMinMaxTemp = (prvTempData, nextTempData) => {
 };
 
 export const converDataToDispaly = weatherData => {
-  let displayData = [];
+  let displayData = {};
   displayData.city = weatherData.city.name;
   displayData.country = weatherData.city.country;
-  displayData.list = [];
+  displayData.list = {};
   weatherData.list.map((value, key) => {
     const day = moment(value.dt_txt).format('dddd');
     const date = moment(value.dt_txt).format('DD-MM-YYYY');
@@ -35,5 +35,8 @@ export const converDataToDispaly = weatherData => {
       };
     }
   });
+  console.log(JSON.stringify(displayData));
   return displayData;
 };
+
+

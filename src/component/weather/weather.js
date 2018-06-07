@@ -8,6 +8,7 @@ class Weather extends Component {
      */
 
   render() {
+    // console.log(JSON.stringify(this.props.weatherData));
     const { city, country, list } = this.props.weatherData;
     const today = list[Object.keys(list)[0]];
     delete list[Object.keys(list)[0]];

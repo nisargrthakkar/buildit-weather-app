@@ -24,7 +24,7 @@ class HomeView extends Component {
     return (
       <div className="app">
         {
-          Object.keys(this.props.weatherData).length > 0
+          this.props.weatherData && Object.keys(this.props.weatherData).length > 0
             ? this.weather()
             : <div className="errorInAPI"><p> {this.props.weatherDataError}</p></div>
         }
